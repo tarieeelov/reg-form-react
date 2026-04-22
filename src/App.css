@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  padding:20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+  width:420px;
+  background:white;
+  border:1px solid gray;
+  border-radius:12px;
+  padding:20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card__title{
+  margin:0 0 15px 0;
+  text-align:center;
+  color:black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
 
-.App-link {
-  color: #61dafb;
+.form__group{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__label{
+  color:black;
+  font-size:14px;
+}
+
+.form__input{
+  height:40px;
+  border:1px solid gray;
+  border-radius:8px;
+  padding:0 10px;
+  background:white;
+}
+
+.form__input:focus{
+  outline:none;
+  border:1px solid green;
+}
+
+.form__input_error{
+  border:1px solid red;
+  background:seashell;
+}
+
+.form__err{
+  margin:0;
+  font-size:13px;
+  color:red;
+}
+
+.form__btn{
+  margin-top:6px;
+  height:42px;
+  border:none;
+  border-radius:8px;
+  background:green;
+  color:white;
+  cursor:pointer;
+}
+
+.result{
+  width:300px;
+  background:white;
+  border:1px solid green;
+  border-radius:12px;
+  padding:16px;
+}
+
+.result__title{
+  margin:0 0 10px 0;
+  color:green;
+}
+
+.result__line{
+  margin:0 0 6px 0;
+  color:black;
 }
